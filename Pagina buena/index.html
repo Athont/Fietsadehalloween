@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Fiesta de los Muertos | Terminal de Acceso Oficial y Adquisición de Boletos. Experiencia inmersiva con tecnología y tradición.">
+    <meta name="theme-color" content="#272B2A">
+    <title>Fiesta de los Muertos | Tickets Oficiales</title>
+
+    <!-- Fuentes de Google: Rajdhani para títulos cyberpunk/tech e Inter para lectura continua -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Iconografía Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Hoja de Estilos Externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Overlay de líneas de escaneo analógicas / CRT -->
+    <div class="scanlines-overlay" aria-hidden="true"></div>
+
+    <!-- Barra de Navegación Principal -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Logotipo del Evento -->
+            <a href="#" class="brand-logo">
+                <i class="ph-fill ph-skull"></i>
+                <span class="brand-name">ALL <span>TTIMA</span></span>
+            </a>
+
+            <!-- Enlaces de Navegación de Escritorio -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#info" class="nav-link">Información</a></li>
+                <li><a href="#lineup" class="nav-link">Lineup</a></li>
+                <li><a href="#tickets" class="nav-link">Tickets</a></li>
+            </ul>
+
+            <!-- Indicador de Estado del Sistema -->
+            <div class="nav-status">
+                <span class="status-dot"></span>
+                <span>MAINFRAME EN LÍNEA</span>
+            </div>
+
+            <!-- Botón Hamburguesa para Móviles -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir Menú">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section: La Noche del Renacimiento -->
+    <header class="hero-section" id="hero">
+        <div class="hero-bg-canvas" aria-hidden="true">
+            <div class="ambient-glow-cherry"></div>
+            <div class="ambient-glow-blueberry"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="badge-restricted clip-corner-reverse">
+                <i class="ph-fill ph-warning"></i> ACCESO RESTRINGIDO
+            </div>
+
+            <h1 class="hero-title">
+                NO ESTAMOS MUERTOS <br>
+                <span class="hero-title-highlight glow-text-cherry"> SEGUIMOS AQUÍ</span>
+            </h1>
+
+            <p class="hero-description">
+                Una experiencia multisensorial donde el misticismo ancestral
+                se funde con la vanguardia sonora e industrial, creando un ambiente único y envolvente. Capacidad
+                estrictamente limitada para garantizar una experiencia íntima
+
+            </p>
+
+            <div class="hero-cta-group">
+                <a href="#tickets" class="btn btn-primary clip-corner">
+                    <i class="ph-fill ph-ticket"></i> Obtener Acceso
+                </a>
+                <a href="#info" class="btn btn-secondary clip-corner">
+                    <i class="ph ph-info"></i> Desclasificar Info
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Información: Parámetros de Misión -->
+    <section class="section section-info" id="info">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-tag">///</span> PARÁMETROS DE MISIÓN
+                </h2>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Tarjeta 1: Coordenadas -->
+                <article class="info-card border-accent-blueberry clip-corner">
+                    <div class="card-watermark" aria-hidden="true">
+                        <i class="ph-fill ph-map-pin"></i>
+                    </div>
+                    <i class="ph ph-map-pin card-icon icon-blueberry"></i>
+                    <h3 class="card-title">Coordenadas</h3>
+                    <p class="card-text">
+                        Salón Central, Sector 7.<br>
+                        Acceso exclusivo por la puerta sur. Inspección biométrica obligatoria en el filtro de seguridad
+                        perimetral.
+                    </p>
+                </article>
+
+                <!-- Tarjeta 2: Sincronización -->
+                <article class="info-card border-accent-cherry clip-corner">
+                    <div class="card-watermark" aria-hidden="true">
+                        <i class="ph-fill ph-clock"></i>
+                    </div>
+                    <i class="ph ph-clock card-icon icon-cherry"></i>
+                    <h3 class="card-title">Sincronización</h3>
+                    <p class="card-text">
+                        Sábado, 31 de Octubre.<br>
+                        Despliegue operativo a las 21:00 HRS.<br>
+                        Cese de transmisiones sonoras a las 04:00 HRS.
+                    </p>
+                </article>
+
+                <!-- Tarjeta 3: Frecuencias -->
+                <article class="info-card border-accent-blueberry clip-corner">
+                    <div class="card-watermark" aria-hidden="true">
+                        <i class="ph-fill ph-headphones"></i>
+                    </div>
+                    <i class="ph ph-headphones card-icon icon-blueberry"></i>
+                    <h3 class="card-title">Frecuencias</h3>
+                    <p class="card-text">
+                        Sonorización espacial de alta fidelidad. Techno industrial, dark wave y sintetizadores análogos.
+                        Show de lásers y visuales reactivos en vivo.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Lineup -->
+    <section class="section section-lineup" id="lineup">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-tag">///</span> TRANSMISORES SONOROS
+                </h2>
+            </div>
+
+            <div class="lineup-grid">
+                <div class="lineup-item clip-corner">
+                    <p class="lineup-time">21:00 - 22:30</p>
+                    <h3 class="lineup-artist">OBSIDIAN DUST</h3>
+                    <p class="lineup-genre">Ambient Drone / Intro</p>
+                </div>
+                <div class="lineup-item clip-corner">
+                    <p class="lineup-time">22:30 - 00:30</p>
+                    <h3 class="lineup-artist">CYBER CATRINA</h3>
+                    <p class="lineup-genre">Dark Techno / EBM</p>
+                </div>
+                <div class="lineup-item clip-corner">
+                    <p class="lineup-time">00:30 - 02:30</p>
+                    <h3 class="lineup-artist">NEO XIBALBA</h3>
+                    <p class="lineup-genre">Industrial Hard Dance</p>
+                </div>
+                <div class="lineup-item clip-corner">
+                    <p class="lineup-time">02:30 - 04:00</p>
+                    <h3 class="lineup-artist">NEON REAPER</h3>
+                    <p class="lineup-genre">Acid Core / Closing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Boletos / Terminal de Acceso -->
+    <section class="section section-tickets" id="tickets">
+        <div class="tickets-ambient-glow" aria-hidden="true"></div>
+
+        <div class="container">
+            <div class="terminal-frame clip-corner">
+                <div class="terminal-inner">
+
+                    <!-- Columna Izquierda: Vista Previa del Ticket -->
+                    <div class="ticket-info-col">
+                        <h2>TERMINAL DE ACCESO</h2>
+                        <p class="ticket-subtitle">Asegura tu código QR de entrada encriptada. Cupo restringido.</p>
+
+                        <div class="ticket-preview-card clip-corner">
+                            <!-- Animación del escáner láser rojo (Cherry Tomato) -->
+                            <div class="laser-scanner-line" aria-hidden="true"></div>
+
+                            <!-- Muescas laterales del boleto -->
+                            <div class="ticket-notch-left" aria-hidden="true"></div>
+                            <div class="ticket-notch-right" aria-hidden="true"></div>
+
+                            <p class="ticket-type">PASE GENERAL ENCRIPTADO</p>
+
+                            <div class="ticket-price-box">
+                                <span class="ticket-price" id="displayPrice">$185</span>
+                                <span class="currency-tag">MXN</span>
+                            </div>
+
+                            <ul class="ticket-features">
+                                <li>
+                                    <i class="ph-fill ph-check-circle"></i>
+                                    <span>Acceso total al recinto y zonas inmersivas</span>
+                                </li>
+                                <li>
+                                    <i class="ph-fill ph-check-circle"></i>
+                                    <span>Bebida de cortesía en barras seleccionadas</span>
+                                </li>
+                                <li>
+                                    <i class="ph-fill ph-check-circle"></i>
+                                    <span>Código QR con firma criptográfica única</span>
+                                </li>
+                            </ul>
+
+                            <div class="qr-mini-badge">
+                                <i class="ph ph-qr-code"></i>
+                                <span class="qr-mini-text">AUTENTICACIÓN SHA-256 INTEGRADA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Formulario de Registro -->
+                    <div class="ticket-form-col">
+                        <form id="ticketForm">
+                            <!-- Campo Nombre -->
+                            <div class="form-group">
+                                <label for="userName" class="form-label">ID DE USUARIO (NOMBRE COMPLETO)</label>
+                                <input type="text" id="userName" class="form-input" placeholder="Ingresa tu nombre"
+                                    required>
+                            </div>
+
+                            <!-- Campo Correo -->
+                            <div class="form-group">
+                                <label for="userEmail" class="form-label">CANAL DE COMUNICACIÓN (EMAIL)</label>
+                                <input type="email" id="userEmail" class="form-input"
+                                    placeholder="usuario@cybermail.com" required>
+                            </div>
+
+                            <!-- Campo Código Promocional / Creador -->
+                            <div class="form-group">
+                                <label for="promoInput" class="form-label label-accent">ENLACE DE AFILIADO (CÓDIGO DE
+                                    CREADOR)</label>
+                                <div class="promo-input-group">
+                                    <input type="text" id="promoInput" class="form-input promo-input"
+                                        placeholder="CÓDIGO PROMO">
+                                    <button type="button" id="btnApplyCode" class="btn-apply-code clip-corner">
+                                        Aplicar
+                                    </button>
+                                </div>
+                                <p id="promoMsg" class="promo-feedback-msg">
+                                    Si tienes un código de creador, aplícalo para un descuento de $50 MXN.
+                                </p>
+                            </div>
+
+                            <!-- Botón CTA de Pago -->
+                            <button type="submit" class="btn btn-primary btn-checkout clip-corner">
+                                <i class="ph-fill ph-lock-key"></i> Proximamente
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Confirmación y Protocolo de Pago -->
+    <div class="modal-backdrop" id="paymentModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-box clip-corner">
+            <button class="modal-close-btn" id="btnCloseModal" aria-label="Cerrar Ventana">
+                <i class="ph ph-x"></i>
+            </button>
+
+            <div class="modal-status-badge">
+                <i class="ph-fill ph-shield-check"></i> TRANSACCIÓN ENCRIPTADA
+            </div>
+
+            <h3 class="modal-title" id="modalTitle">PROTOCOLO INICIADO</h3>
+            <p style="color: var(--color-text-muted); font-size: 0.92rem;">
+                Tu orden ha sido pre-autorizada en el sistema. Presenta o resguarda tu clave de validación:
+            </p>
+
+            <div class="modal-qr-container">
+                <div class="modal-qr-laser" aria-hidden="true"></div>
+                <!-- Código QR en SVG con estética cyberpunk -->
+                <svg class="modal-qr-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" fill="#272B2A" />
+                    <!-- Patrones de QR simulados y esquinas de posicionamiento -->
+                    <rect x="10" y="10" width="25" height="25" stroke="#6F75CB" stroke-width="4" />
+                    <rect x="16" y="16" width="13" height="13" fill="#EB3C27" />
+
+                    <rect x="65" y="10" width="25" height="25" stroke="#6F75CB" stroke-width="4" />
+                    <rect x="71" y="16" width="13" height="13" fill="#EB3C27" />
+
+                    <rect x="10" y="65" width="25" height="25" stroke="#6F75CB" stroke-width="4" />
+                    <rect x="16" y="71" width="13" height="13" fill="#EB3C27" />
+
+                    <!-- Puntos de datos internos -->
+                    <rect x="42" y="15" width="8" height="8" fill="#E5E7EB" />
+                    <rect x="42" y="28" width="8" height="8" fill="#6F75CB" />
+                    <rect x="15" y="42" width="8" height="8" fill="#E5E7EB" />
+                    <rect x="28" y="42" width="8" height="8" fill="#6F75CB" />
+                    <rect x="42" y="42" width="16" height="16" fill="#EB3C27" />
+                    <rect x="65" y="42" width="8" height="8" fill="#E5E7EB" />
+                    <rect x="78" y="42" width="8" height="8" fill="#6F75CB" />
+                    <rect x="42" y="65" width="8" height="8" fill="#6F75CB" />
+                    <rect x="42" y="78" width="8" height="8" fill="#E5E7EB" />
+                    <rect x="65" y="65" width="10" height="10" fill="#EB3C27" />
+                    <rect x="80" y="78" width="8" height="8" fill="#6F75CB" />
+                </svg>
+                <span
+                    style="font-family: var(--font-tech); font-size: 0.8rem; color: var(--color-blueberry); margin-top: 0.5rem; letter-spacing: 0.1em;"
+                    id="modalTicketId">
+                    FDM-894120
+                </span>
+            </div>
+
+            <div class="modal-details">
+                <p><span>Titular:</span> <span id="modalUserName">-</span></p>
+                <p><span>Email:</span> <span id="modalUserEmail">-</span></p>
+                <p><span>Total a Pagar:</span> <span id="modalFinalPrice" style="color: var(--color-cherry);">$185
+                        MXN</span></p>
+            </div>
+
+            <button type="button" class="btn btn-primary clip-corner" id="modalFinishBtn" style="width: 100%;">
+                <i class="ph-fill ph-check"></i> Confirmar & Descargar Boleto
+            </button>
+        </div>
+    </div>
+
+    <!-- Pie de Página (Footer) -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <i class="ph-fill ph-skull"></i>
+                <span>FIESTA DE LOS MUERTOS</span>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                    aria-label="Instagram">
+                    <i class="ph-fill ph-instagram-logo"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link"
+                    aria-label="TikTok">
+                    <i class="ph-fill ph-tiktok-logo"></i>
+                </a>
+            </div>
+
+            <p class="footer-copy">
+                &copy; 2026 EVENTOS CLASIFICADOS. TODOS LOS DERECHOS RESERVADOS.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script Externo -->
+    <script src="script.js"></script>
+</body>
+
+</html>
